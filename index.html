@@ -334,6 +334,15 @@
 
     /* ---- MODELS ---- */
     .models { padding:80px 0; background:var(--bg-section); }
+    .models-category { margin-bottom:60px; }
+    .models-category:last-child { margin-bottom:0; }
+    .models-cat-title {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: 700;
+      margin-bottom: 24px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent-pink);
+    }
     .models-grid {
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(175px,1fr));
@@ -358,6 +367,51 @@
     .model-info { padding:14px; }
     .model-info h4 { font-size:.95rem; font-weight:700; margin-bottom:4px; }
     .model-info p  { color:var(--text-secondary); font-size:.82rem; line-height:1.5; }
+
+    /* ---- HERO VIDEO ---- */
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .hero-video-wrap {
+      width: 100%;
+      max-width: 560px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-pink);
+      order: -1;
+    }
+    .hero-video-wrap video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero-content {
+      text-align: center;
+      width: 100%;
+    }
+    @media (min-width: 900px) {
+      .hero-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+      }
+      .hero-video-wrap {
+        order: 1;
+        flex: 0 0 45%;
+        max-width: 480px;
+      }
+      .hero-content {
+        flex: 1;
+        text-align: left;
+      }
+      .hero-ctas {
+        justify-content: flex-start;
+      }
+    }
 
     /* ---- QUALITY (Does Candy AI produce good porn?) ---- */
     .quality { padding:80px 0; background:var(--bg-dark); }
@@ -651,31 +705,23 @@
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
-  <div class="container">
-    <h1>Your Perfect<br><span class="gradient-text">AI Girlfriend</span><br>— Uncensored</h1>
-
-    <p>Design her from scratch. Her look, her voice, her personality. Then chat, call, and generate explicit photos — all in one place.</p>
-    <p>Candy AI Porn gives you the most visually consistent and customizable AI companion available in 2026. 11.6 million monthly users can't be wrong.</p>
-
-    <div class="hero-ctas">
-      <button class="btn-cta" data-open-modal>🍬 Create Your AI Girlfriend Free</button>
-      <a href="#quality" class="btn-secondary">Read Quality Review ↓</a>
+  <div class="container hero-container">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline poster="/images/AI Girlfriend - Coco Bailey.webp">
+        <source src="/videos/hero-candy-ai.mp4" type="video/mp4">
+      </video>
     </div>
-    <p class="hero-note">✅ Free tier available &nbsp;•&nbsp; No credit card required &nbsp;•&nbsp; 18+ only</p>
+    <div class="hero-content">
+      <h1>Your Perfect<br><span class="gradient-text">AI Girlfriend</span><br>— Uncensored</h1>
 
-    <div class="hero-visual">
-      <div class="hero-card" onclick="goToOffer('default')">
-        <div class="card-emoji">👩‍🦰</div>
-        <div class="card-tag">Realistic</div>
+      <p>Design her from scratch. Her look, her voice, her personality. Then chat, call, and generate explicit photos — all in one place.</p>
+      <p>Candy AI Porn gives you the most visually consistent and customizable AI companion available in 2026. 11.6 million monthly users can't be wrong.</p>
+
+      <div class="hero-ctas">
+        <button class="btn-cta" data-open-modal>🍬 Create Your AI Girlfriend Free</button>
+        <a href="#quality" class="btn-secondary">Read Quality Review ↓</a>
       </div>
-      <div class="hero-card" onclick="goToOffer('default')">
-        <div class="card-emoji">🎭</div>
-        <div class="card-tag">Anime</div>
-      </div>
-      <div class="hero-card" onclick="goToOffer('default')">
-        <div class="card-emoji">🎬</div>
-        <div class="card-tag">Live Action</div>
-      </div>
+      <p class="hero-note">✅ Free tier available &nbsp;•&nbsp; No credit card required &nbsp;•&nbsp; 18+ only</p>
     </div>
   </div>
 </section>
@@ -770,62 +816,158 @@
 <!-- ===================== MODELS ===================== -->
 <section class="models" id="models">
   <div class="container">
-    <h2 class="section-title">Character Types & Styles</h2>
-    <p class="section-subtitle">Six companion archetypes — each with unique visuals, personality settings, and NSFW behaviors.</p>
-    <div class="models-grid">
+    <h2 class="section-title">AI Models Gallery</h2>
+    <p class="section-subtitle">Real characters from Candy AI — browse AI Girlfriends, Anime companions, and AI Boyfriends.</p>
 
+    <!-- AI Girlfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">🌸 AI Girlfriend</h3>
+      <div class="models-grid">
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">👩‍🦳</div>
+        <img src="/images/AI Girlfriend - Akira Iron.webp" alt="AI Girlfriend - Akira Iron" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Realistic Girlfriend</h4>
-          <p>Photorealistic portraits with lifelike skin, natural expressions, and detailed clothing. Ideal for immersive companionship scenarios.</p>
+          <h4>Akira Iron</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">🎎</div>
+        <img src="/images/AI Girlfriend - Coco Bailey (10).webp" alt="AI Girlfriend - Coco Bailey (10)" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Anime Waifu</h4>
-          <p>Stylized Japanese animation aesthetic with vivid colors, expressive eyes, and soft waifu character design. Fully NSFW-capable.</p>
+          <h4>Coco Bailey (10)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">😈</div>
+        <img src="/images/AI Girlfriend - Coco Bailey (2).webp" alt="AI Girlfriend - Coco Bailey (2)" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Dominant & Wild</h4>
-          <p>Confident, assertive companion personality. Takes the lead in conversations and escalates naturally. Built for users who enjoy intensity.</p>
+          <h4>Coco Bailey (2)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">💕</div>
+        <img src="/images/AI Girlfriend - Coco Bailey (3).webp" alt="AI Girlfriend - Coco Bailey (3)" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Sweet & Romantic</h4>
-          <p>Emotionally warm, caring, and deeply attentive. Great for long-form emotional companionship and intimate conversation without pressure.</p>
+          <h4>Coco Bailey (3)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">🎭</div>
+        <img src="/images/AI Girlfriend - Coco Bailey (4).webp" alt="AI Girlfriend - Coco Bailey (4)" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Story Mode Roleplay</h4>
-          <p>Structured narrative scenarios added in late 2025. Pick a theme — romance, adventure, fantasy — and the AI co-writes the story with you.</p>
+          <h4>Coco Bailey (4)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
       <div class="model-card" onclick="goToOffer('default')">
-        <div class="model-img">🎥</div>
+        <img src="/images/AI Girlfriend - Coco Bailey (5).webp" alt="AI Girlfriend - Coco Bailey (5)" loading="lazy" class="model-img">
         <div class="model-info">
-          <h4>Live Action Model</h4>
-          <p>Exclusive to Candy AI Porn in 2026. These companions support 120-second video generation — they literally move and react to your messages.</p>
+          <h4>Coco Bailey (5)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
         </div>
       </div>
-
+      </div>
     </div>
+
+    <!-- Anime Girlfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">🎭 Anime Girlfriend</h3>
+      <div class="models-grid">
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (2).webp" alt="Anime Girlfriend - Yama Gito (2)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (2)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (3).webp" alt="Anime Girlfriend - Yama Gito (3)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (3)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (4).webp" alt="Anime Girlfriend - Yama Gito (4)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (4)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (5).webp" alt="Anime Girlfriend - Yama Gito (5)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (5)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (6).webp" alt="Anime Girlfriend - Yama Gito (6)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (6)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (7).webp" alt="Anime Girlfriend - Yama Gito (7)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (7)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- AI Boyfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">👔 AI Boyfriend</h3>
+      <div class="models-grid">
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (2).webp" alt="AI Boyfriend - Charles Weston (2)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (2)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (3).webp" alt="AI Boyfriend - Charles Weston (3)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (3)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (4).webp" alt="AI Boyfriend - Charles Weston (4)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (4)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (5).webp" alt="AI Boyfriend - Charles Weston (5)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (5)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (6).webp" alt="AI Boyfriend - Charles Weston (6)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (6)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston.webp" alt="AI Boyfriend - Charles Weston" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
   </div>
 </section>
-
 <!-- ===================== WHY US ===================== -->
 <section class="why-us" id="why-us">
   <div class="container">
