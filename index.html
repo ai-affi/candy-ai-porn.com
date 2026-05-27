@@ -345,8 +345,14 @@
     }
     .models-grid {
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(175px,1fr));
-      gap:16px;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap:20px;
+    }
+    @media (min-width: 768px) {
+      .models-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        gap:24px;
+      }
     }
     .model-card {
       border-radius:var(--radius);
@@ -358,11 +364,15 @@
     }
     .model-card:hover { transform:translateY(-5px); border-color:var(--accent-pink); }
     .model-img {
-      width:100%; height:260px;
+      width:100%; height:420px;
       background: linear-gradient(135deg, rgba(233,30,140,0.15), rgba(156,39,176,0.1));
       display:flex; align-items:center; justify-content:center;
       font-size:2.8rem;
       object-fit:cover;
+      object-position: top center;
+    }
+    @media (min-width: 768px) {
+      .model-img { height: 520px; }
     }
     .model-info { padding:14px; }
     .model-info h4 { font-size:.95rem; font-weight:700; margin-bottom:4px; }
@@ -703,6 +713,164 @@
   </div>
 </header>
 
+<!-- ===================== MODELS ===================== -->
+<section class="models" id="models">
+  <div class="container">
+    <h2 class="section-title">AI Models Gallery</h2>
+    <p class="section-subtitle">Real characters from Candy AI — browse AI Girlfriends, Anime companions, and AI Boyfriends.</p>
+
+    <!-- AI Girlfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">🌸 AI Girlfriend</h3>
+      <div class="models-grid">
+
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Coco Bailey (10).webp" alt="AI Girlfriend - Coco Bailey (10)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Coco Bailey (10)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Coco Bailey (2).webp" alt="AI Girlfriend - Coco Bailey (2)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Coco Bailey (2)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Coco Bailey (3).webp" alt="AI Girlfriend - Coco Bailey (3)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Coco Bailey (3)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Coco Bailey (4).webp" alt="AI Girlfriend - Coco Bailey (4)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Coco Bailey (4)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Coco Bailey (5).webp" alt="AI Girlfriend - Coco Bailey (5)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Coco Bailey (5)</h4>
+          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Anime Girlfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">🎭 Anime Girlfriend</h3>
+      <div class="models-grid">
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Girlfriend - Akira Iron.webp" alt="Anime Girlfriend - Akira Iron" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Akira Iron</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (2).webp" alt="Anime Girlfriend - Yama Gito (2)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (2)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (3).webp" alt="Anime Girlfriend - Yama Gito (3)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (3)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (4).webp" alt="Anime Girlfriend - Yama Gito (4)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (4)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (5).webp" alt="Anime Girlfriend - Yama Gito (5)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (5)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (6).webp" alt="Anime Girlfriend - Yama Gito (6)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (6)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/Anime Girlfriend - Yama Gito (7).webp" alt="Anime Girlfriend - Yama Gito (7)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Yama Gito (7)</h4>
+          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- AI Boyfriend -->
+    <div class="models-category">
+      <h3 class="models-cat-title">👔 AI Boyfriend</h3>
+      <div class="models-grid">
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (2).webp" alt="AI Boyfriend - Charles Weston (2)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (2)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (3).webp" alt="AI Boyfriend - Charles Weston (3)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (3)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (4).webp" alt="AI Boyfriend - Charles Weston (4)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (4)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (5).webp" alt="AI Boyfriend - Charles Weston (5)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (5)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston (6).webp" alt="AI Boyfriend - Charles Weston (6)" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston (6)</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      <div class="model-card" onclick="goToOffer('default')">
+        <img src="/images/AI Boyfriend - Charles Weston.webp" alt="AI Boyfriend - Charles Weston" loading="lazy" class="model-img">
+        <div class="model-info">
+          <h4>Charles Weston</h4>
+          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- ===================== HERO ===================== -->
 <section class="hero">
   <div class="container hero-container">
@@ -813,161 +981,6 @@
   </div>
 </section>
 
-<!-- ===================== MODELS ===================== -->
-<section class="models" id="models">
-  <div class="container">
-    <h2 class="section-title">AI Models Gallery</h2>
-    <p class="section-subtitle">Real characters from Candy AI — browse AI Girlfriends, Anime companions, and AI Boyfriends.</p>
-
-    <!-- AI Girlfriend -->
-    <div class="models-category">
-      <h3 class="models-cat-title">🌸 AI Girlfriend</h3>
-      <div class="models-grid">
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Akira Iron.webp" alt="AI Girlfriend - Akira Iron" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Akira Iron</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Coco Bailey (10).webp" alt="AI Girlfriend - Coco Bailey (10)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Coco Bailey (10)</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Coco Bailey (2).webp" alt="AI Girlfriend - Coco Bailey (2)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Coco Bailey (2)</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Coco Bailey (3).webp" alt="AI Girlfriend - Coco Bailey (3)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Coco Bailey (3)</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Coco Bailey (4).webp" alt="AI Girlfriend - Coco Bailey (4)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Coco Bailey (4)</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Girlfriend - Coco Bailey (5).webp" alt="AI Girlfriend - Coco Bailey (5)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Coco Bailey (5)</h4>
-          <p>AI Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <!-- Anime Girlfriend -->
-    <div class="models-category">
-      <h3 class="models-cat-title">🎭 Anime Girlfriend</h3>
-      <div class="models-grid">
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (2).webp" alt="Anime Girlfriend - Yama Gito (2)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (2)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (3).webp" alt="Anime Girlfriend - Yama Gito (3)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (3)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (4).webp" alt="Anime Girlfriend - Yama Gito (4)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (4)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (5).webp" alt="Anime Girlfriend - Yama Gito (5)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (5)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (6).webp" alt="Anime Girlfriend - Yama Gito (6)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (6)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/Anime Girlfriend - Yama Gito (7).webp" alt="Anime Girlfriend - Yama Gito (7)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Yama Gito (7)</h4>
-          <p>Anime Girlfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <!-- AI Boyfriend -->
-    <div class="models-category">
-      <h3 class="models-cat-title">👔 AI Boyfriend</h3>
-      <div class="models-grid">
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston (2).webp" alt="AI Boyfriend - Charles Weston (2)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston (2)</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston (3).webp" alt="AI Boyfriend - Charles Weston (3)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston (3)</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston (4).webp" alt="AI Boyfriend - Charles Weston (4)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston (4)</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston (5).webp" alt="AI Boyfriend - Charles Weston (5)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston (5)</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston (6).webp" alt="AI Boyfriend - Charles Weston (6)" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston (6)</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      <div class="model-card" onclick="goToOffer('default')">
-        <img src="/images/AI Boyfriend - Charles Weston.webp" alt="AI Boyfriend - Charles Weston" loading="lazy" class="model-img">
-        <div class="model-info">
-          <h4>Charles Weston</h4>
-          <p>AI Boyfriend on Candy AI — fully customizable and NSFW-ready.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 <!-- ===================== WHY US ===================== -->
 <section class="why-us" id="why-us">
   <div class="container">
