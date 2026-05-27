@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy/
+Disallow: /terms/
+Disallow: /affiliate-disclosure/
+
+Sitemap: https://candy-ai-porn.com/sitemap.xml
